@@ -1,0 +1,143 @@
+/*--------------------Log in/Register Page--------------------*/
+body{
+    background: rgb(235, 234, 234);
+    font-family: 'Poppins', sans-serif;
+}
+
+/*page main container*/
+.signin_register_form{
+    text-align: center;
+    background: white;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*title*/
+.title{
+    font-weight: bold;
+    margin-bottom: 180px;
+}
+
+/*medium size form imput box*/
+.formTextBox, .regFormTextBox{
+    width: 250px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 0 0 10px 0;    
+}
+
+/*hide registeration section*/
+#registerSec{
+    display: none;
+}
+
+#registerSec label{
+    margin: 0;
+}
+
+/*--------------------Home Page--------------------*/
+/*set logo size*/
+.mainlogo{
+    width: 100px;
+    height: 81px;
+    margin: 0 10px 5px 0;
+}
+
+nav{
+    background: rgba(192, 192, 192, 0.5)
+}
+
+/*nav bar text*/
+nav li h3{
+    color: black;
+    margin: 0 15px;
+}
+
+/*Nav bar search box*/
+.searchbox{
+    width: 50vw;
+    padding: 15px 0 15px 15px;
+}
+
+/*Nav bar search icon*/
+.searchicon{
+    width: 20px;
+    height: 20px;
+}
+
+/*Nav bar shopping cart container*/
+.cartGroup{
+    border: 1px solid black;
+}
+
+/*Nav bar cart item indicator*/
+.cartGroup input{
+    width: 55px;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+/*Nav bar cart iconr*/
+.cartGroup img{
+    width: 45px;
+    height: 45px;
+}
+
+/*Tool Card*/
+/*main card*/
+.multitoolItem .card{
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+/*tool title*/
+.toolName{
+    text-align: center;
+}
+
+/*tool image*/
+.toolImage{
+    width: 200px;
+}
+
+/*tool price description*/
+.toolPriceBox{
+    font-size: 1.5rem;
+    color: gray;
+    font-weight: bold;
+}
+
+/*add to cart section*/
+/*input*/
+.amountInput{
+    width: 80%;
+    font-size: 1.27rem;
+}
+
+/*button*/
+.addCart{
+    padding: 10 25px;
+}
+
+/*---------Shopping Cart---------*/
+.topWindow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background: rgb(235, 234, 234);
+}
+/*, #checkoutContainer*/
+#shoppingCartContainer, #checkoutContainer{
+    display: none;
+}
+
+.cartListContainer{
+    padding: 20px 10px;
+    background: white;
+    width: 90vw;
+}

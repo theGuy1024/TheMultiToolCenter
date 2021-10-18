@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Home</title>
+</head>
+<body>
+  <!--Nav Bar-->
+  <nav class="navbar navbar-expand-sm navbar-light border-bottom border-light sticky-top">
+    <!--logo-->
+    <img class="mainlogo my-auto" src="./images/logo.png" alt="logo">
+    <!--collapse button-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+      <!--nav content-->
+      <ul class="navbar-nav">
+        <!--search bar-->
+        <li class="nav-item my-auto">
+          <form class="d-flex">
+            <input class="form-control searchbox " type="search" placeholder="Search Item" aria-label="Search">
+            <button class="btn btn-light my-auto" type="submit">
+              <img class="searchicon" src="./images/magnifier.png" alt="magnifier">
+            </button>
+          </form>
+        </li>  
+        <!--text-->
+        <li class="nav-item my-auto">
+          <h3>Shopping</h3>
+        </li> 
+        <!--cart container-->
+        <li class="nav-item my-auto">
+          <div class="btn-group rounded cartGroup" role="group">
+            <input id="cartCounter" type="text" disabled value="0">
+            <img src="./images/cart.png" alt="cart" id="cartButton">
+          </div>
+        </li>  
+      </ul>
+    </div>  
+  </nav>
+
+  <!--shopping items-->
+
+  <div class="container-fluid" id="shoppingHomePage">
+    <div class="row">
+      <div class="col-sm-6 multitoolItem">
+        <!--item 1-->
+        <div class="card">
+          <div class="row">
+            <!--item name & image-->
+            <div class="col-sm-6">
+              <h2 class="toolName">Heritage</h2>
+              <img class="toolImage" id="HeritageImage" src="./images/heritage-supertool-300.jpg" alt="multitool">
+            </div>
+            <!--item description and purchase-->
+            <div class="col-sm-6">
+              <h4>Description</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
+              <p class="toolPriceBox">$<span id="HeritagePrice">45.00</span></p>
+              <hr>
+              <!--add to cart-->
+              <div class="row">              
+                <div class="col-sm-6">
+                  <input class="amountInput" type="number" id="HeritageInput">
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-primary addCart" onclick="queueItemNew('Heritage')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 multitoolItem">
+        <!--item 2-->
+        <div class="card">
+          <div class="row">
+            <!--item name & image-->
+            <div class="col-sm-6">
+              <h2 class="toolName">Mut EOD Fanned</h2>
+              <img class="toolImage" id="MutImage" src="./images/mut-eod-fanned.jpg" alt="multitool">
+            </div>
+            <!--item description and purchase-->
+            <div class="col-sm-6">
+              <h4>Description</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
+              <p class="toolPriceBox">$<span id="MutPrice">48.00</span></p>
+              <hr>
+              <!--add to cart-->
+              <div class="row">              
+                <div class="col-sm-6">
+                  <input class="amountInput" type="number" id="MutInput">
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-primary" onclick="queueItemNew('Mut')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 multitoolItem">
+        <!--item 1-->
+        <div class="card">
+          <div class="row">
+            <!--item name & image-->
+            <div class="col-sm-6">
+              <h2 class="toolName">Skeletool</h2>
+              <img class="toolImage" id="SkeletoolImage" src="./images/skeletool-silver-fanned.jpg" alt="multitool">
+            </div>
+            <!--item description and purchase-->
+            <div class="col-sm-6">
+              <h4>Description</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
+              <p class="toolPriceBox">$<span id="SkeletoolPrice">38.00</span></p>
+              <hr>
+              <!--add to cart-->
+              <div class="row">              
+                <div class="col-sm-6">
+                  <input class="amountInput" type="number" id="SkeletoolInput">
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-primary" onclick="queueItemNew('Skeletool')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 multitoolItem">
+        <!--item 2-->
+        <div class="card">
+          <div class="row">
+            <!--item name & image-->
+            <div class="col-sm-6">
+              <h2 class="toolName">Supertool 300m</h2>
+              <img class="toolImage" id="SupertoolImage" src="./images/supertool-300m-black-fanned.jpg" alt="multitool">
+            </div>
+            <!--item description and purchase-->
+            <div class="col-sm-6">
+              <h4>Description</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
+              <p class="toolPriceBox">$<span id="SupertoolPrice">42.00</span></p>
+              <hr>
+              <!--add to cart-->
+              <div class="row">              
+                <div class="col-sm-6">
+                  <input class="amountInput" type="number" id="SupertoolInput">
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-primary" onclick="queueItemNew('Supertool')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-6 multitoolItem">
+        <!--item 1-->
+        <div class="card">
+          <div class="row">
+            <!--item name & image-->
+            <div class="col-sm-6">
+              <h2 class="toolName">Surge</h2>
+              <img class="toolImage" id="SurgeImage" src="./images/surge-fanned.jpg" alt="multitool">
+            </div>
+            <!--item description and purchase-->
+            <div class="col-sm-6">
+              <h4>Description</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
+              <p class="toolPriceBox">$<span id="SurgePrice">35.00</span></p>
+              <hr>
+              <!--add to cart-->
+              <div class="row">              
+                <div class="col-sm-6">
+                  <input class="amountInput" type="number" id="SurgeInput">
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-primary" onclick="queueItemNew('Surge')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 multitoolItem">
+        <!--item 2-->
+        <div class="card">
+          <div class="row">
+            <!--item name & image-->
+            <div class="col-sm-6">
+              <h2 class="toolName">Wingman</h2>
+              <img class="toolImage" id="WingmanImage" src="./images/wingman-silver-fanned.jpg" alt="multitool">
+            </div>
+            <!--item description and purchase-->
+            <div class="col-sm-6">
+              <h4>Description</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
+              <p class="toolPriceBox">$<span id="WingmanPrice">32.00</span></p>
+              <hr>
+              <!--add to cart-->
+              <div class="row">              
+                <div class="col-sm-6">
+                  <input class="amountInput" type="number" id="WingmanInput">
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-primary" onclick="queueItemNew('Wingman')">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Cart Form-->
+  <div class="container-fluid topWindow" id="shoppingCartContainer">
+    <h1 class="toolName">Shopping Cart</h1>
+    <div class="container-fluid rounded cartListContainer">
+      <!--cart header-->
+      <div class="row">
+        <div class="col-sm-6">
+          Product
+        </div>
+        <div class="col-sm-2">
+          Quantity
+        </div>
+        <div class="col-sm-2">
+          Price
+        </div>
+        <div class="col-sm-2">
+          Action
+        </div>
+      </div>
+      <hr>
+      <!--Shopping list-->
+      <div class="row" id="cartList">
+
+      </div>
+      <hr>
+      <!--list total-->
+      <div class="row">
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-2">
+          TOTAL:
+        </div>
+        <div class="col-sm-2">
+          <h3 id="cartTotal">$0.00</h3>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+      <br>
+      <!--Lower buttons-->
+      <div class="row">
+        <div class="col-sm-6">
+          <button class="btn btn-primary mx-auto" id="closeCart">Continue Shopping</button>
+        </div>
+        <div class="col-sm-6">
+          <button class="btn btn-dark mx-auto" id="cashout">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Checkout Form-->
+  <div class="container-fluid topWindow" id="checkoutContainer">
+    <h1 class="toolName">Checkout</h1>
+    <div class="container-fluid rounded cartListContainer">
+      <form class="row">
+          <!--Profile Section-->
+          <h2 class="col-md-12">Profile</h2>
+          <div class="col-sm-6">
+            <label for="validationDefault01" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="validationDefault01" required>
+          </div>
+          <div class="col-sm-6">
+            <label for="validationDefault01" class="form-label">Email Address</label>
+            <input type="text" class="form-control" id="validationDefault01" required>
+          </div>
+          <hr class="col-sm-10">
+          <br class="col-sm-12">
+
+          <!--Address Section-->
+          <h2 class="col-md-12">Delivery Address</h2>
+          <div class="col-sm-7">
+            <label for="validationDefault01" class="form-label">Address 1</label>
+            <input type="text" class="form-control" id="validationDefault01" required>
+          </div>
+          <div class="col-sm-5">
+            <label for="validationDefault01" class="form-label">District</label>
+            <br>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select District</option>
+              <option value="czl">Corozal</option>
+              <option value="ow">Orange Walk</option>
+              <option value="bz">Belize</option>
+              <option value="cy">Cayo</option>
+              <option value="sc">Stann Creek</option>
+              <option value="tld">Toledo</option>
+            </select>
+          </div>
+          <div class="col-sm-7">
+            <label for="validationDefault01" class="form-label">Address 2 (back up)</label>
+            <input type="text" class="form-control" id="validationDefault01">
+          </div>
+          <div class="col-sm-5">
+            <label for="validationDefault01" class="form-label">District</label>
+            <br>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select District</option>
+              <option value="czl">Corozal</option>
+              <option value="ow">Orange Walk</option>
+              <option value="bz">Belize</option>
+              <option value="cy">Cayo</option>
+              <option value="sc">Stann Creek</option>
+              <option value="tld">Toledo</option>
+            </select>
+          </div>
+          <hr class="col-sm-10">
+          <br class="col-sm-12">
+          
+          <!--Payment Section-->
+          <h2 class="col-md-12">Payment</h2>
+          <div class="custom-control custom-radio  col-md-4">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio col-md-4">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Debit card</label>
+          </div>
+          <div class="custom-control custom-radio col-md-4">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">Paypal</label>
+          </div>
+          <br class="col-md-12">
+          <br class="col-md-12">
+        <div class="col-md-6 mb-3">
+          <label for="cc-name">Name on card</label>
+          <input type="text" class="form-control" id="cc-name" placeholder="" required>
+          <small class="text-muted">Full name as displayed on card</small>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="cc-number">Credit card number</label>
+          <input type="number" class="form-control" id="cc-number" placeholder="" required>
+        </div>
+        <hr class="col-sm-10">
+        <br class="col-sm-12">
+
+        <!--Lower Button Section-->
+        <div class="col-md-6">
+          <input id="cancelCheckout" class="btn btn-danger col-md-6" value="Cancel">
+        </div>
+        <div class="col-md-6">
+          <button id="formLog" class="btn btn-primary col-md-6">Finish Checkout</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+<script src="./js/home.js"></script>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+</script> 
+</html>
