@@ -48,5 +48,5 @@ function createAccount(){
     }
 
     if(fieldTr == 0)
-        window.location.href = "../home.html"
+        window.location.href = "/home.html"
 }
