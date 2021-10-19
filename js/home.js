@@ -33,6 +33,9 @@ $(document).ready(()=>{
         $('#checkoutContainer').fadeIn();  
         /*clear list*/
         clearList();  
+        /*setting number of items and total in checkout summary*/
+        $('#cartAm').val(itemsCount);
+        $('#gTotal').val('$'+total);
     });
     
     //clicking on the "cancel" button - checkout form
@@ -52,22 +55,22 @@ function displayItems(){
         for(x = 0; x < shopIndex; x++){
             var addImg = document.createElement('IMG');
             addImg.src = shopItem[x][1];
-            addImg.setAttribute('class', 'col-sm-3 toolImage dynamicCreation');
+            addImg.setAttribute('class', 'col-md-3 toolImage dynamicCreation');
             cartListBody.appendChild(addImg);
         
             var addName = document.createElement('h2');
             addName.innerHTML = shopItem[x][0];
-            addName.setAttribute('class', 'col-sm-3 dynamicCreation');
+            addName.setAttribute('class', 'col-md-3 dynamicCreation');
             cartListBody.appendChild(addName);
         
             var addQuant = document.createElement('P');
-            addQuant.innerHTML = shopItem[x][2];
-            addQuant.setAttribute('class', 'col-sm-2 dynamicCreation');
+            addQuant.innerHTML = shopItem[x][2]+' pcs';
+            addQuant.setAttribute('class', 'col-md-2 dynamicCreation');
             cartListBody.appendChild(addQuant);
         
             var addPrice = document.createElement('P');
-            addPrice.innerHTML = shopItem[x][3];
-            addPrice.setAttribute('class', 'col-sm-2 dynamicCreation');
+            addPrice.innerHTML = '$'+shopItem[x][3];
+            addPrice.setAttribute('class', 'col-md-2 dynamicCreation');
             cartListBody.appendChild(addPrice);
         }
     }
