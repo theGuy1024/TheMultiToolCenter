@@ -17,7 +17,7 @@
 </head>
 <body>
   <!--Nav Bar-->
-  <nav class="navbar navbar-expand-sm navbar-light border-bottom border-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom border-light sticky-top">
     <!--logo-->
     <img class="mainlogo my-auto" src="./images/logo.png" alt="logo">
     <!--collapse button-->
@@ -60,51 +60,56 @@
         <div class="card">
           <div class="row">
             <!--item name & image-->
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <h2 class="toolName">Heritage</h2>
               <img class="toolImage" id="HeritageImage" src="./images/heritage-supertool-300.jpg" alt="multitool">
             </div>
             <!--item description and purchase-->
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <h4>Description</h4>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
               <p class="toolPriceBox">$<span id="HeritagePrice">45.00</span></p>
               <hr>
               <!--add to cart-->
-              <div class="row">              
-                <div class="col-sm-6">
-                  <input class="amountInput" type="number" id="HeritageInput">
-                </div>
-                <div class="col-sm-6">
-                  <button class="btn btn-primary addCart" onclick="queueItemNew('Heritage')">Add to Cart</button>
+              <div class="row">  
+                <div class="col-sm-12">
+                  <div class="input-group">
+                    <input class="form-control amountInput" type="number" id="HeritageInput">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" onclick="queueItemNew('Heritage')">Add to Cart</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
       <div class="col-sm-6 multitoolItem">
         <!--item 2-->
         <div class="card">
           <div class="row">
             <!--item name & image-->
-            <div class="col-sm-6">
-              <h2 class="toolName">Mut EOD Fanned</h2>
-              <img class="toolImage" id="MutImage" src="./images/mut-eod-fanned.jpg" alt="multitool">
+            <div class="col-lg-6">
+              <h2 class="toolName">Supertool 300m</h2>
+              <img class="toolImage" id="SupertoolImage" src="./images/supertool-300m-black-fanned.jpg" alt="multitool">
             </div>
             <!--item description and purchase-->
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <h4>Description</h4>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
-              <p class="toolPriceBox">$<span id="MutPrice">48.00</span></p>
+              <p class="toolPriceBox">$<span id="SupertoolPrice">42.00</span></p>
               <hr>
               <!--add to cart-->
-              <div class="row">              
-                <div class="col-sm-6">
-                  <input class="amountInput" type="number" id="MutInput">
-                </div>
-                <div class="col-sm-6">
-                  <button class="btn btn-primary" onclick="queueItemNew('Mut')">Add to Cart</button>
+              <div class="row">  
+                <div class="col-sm-12">
+                  <div class="input-group">
+                    <input class="form-control amountInput" type="number" id="SupertoolInput">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" onclick="queueItemNew('Supertool')">Add to Cart</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -119,51 +124,56 @@
         <div class="card">
           <div class="row">
             <!--item name & image-->
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <h2 class="toolName">Skeletool</h2>
               <img class="toolImage" id="SkeletoolImage" src="./images/skeletool-silver-fanned.jpg" alt="multitool">
             </div>
             <!--item description and purchase-->
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <h4>Description</h4>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
               <p class="toolPriceBox">$<span id="SkeletoolPrice">38.00</span></p>
               <hr>
               <!--add to cart-->
-              <div class="row">              
-                <div class="col-sm-6">
-                  <input class="amountInput" type="number" id="SkeletoolInput">
-                </div>
-                <div class="col-sm-6">
-                  <button class="btn btn-primary" onclick="queueItemNew('Skeletool')">Add to Cart</button>
+              <div class="row"> 
+                <div class="col-sm-12">
+                  <div class="input-group">
+                    <input class="form-control amountInput" type="number" id="SkeletoolInput">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" onclick="queueItemNew('Skeletool')">Add to Cart</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
       <div class="col-sm-6 multitoolItem">
         <!--item 2-->
         <div class="card">
           <div class="row">
             <!--item name & image-->
-            <div class="col-sm-6">
-              <h2 class="toolName">Supertool 300m</h2>
-              <img class="toolImage" id="SupertoolImage" src="./images/supertool-300m-black-fanned.jpg" alt="multitool">
+            <div class="col-lg-6">
+              <h2 class="toolName">Mut Fanned</h2>
+              <img class="toolImage" id="MutImage" src="./images/mut-eod-fanned.jpg" alt="multitool">
             </div>
             <!--item description and purchase-->
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <h4>Description</h4>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
-              <p class="toolPriceBox">$<span id="SupertoolPrice">42.00</span></p>
+              <p class="toolPriceBox">$<span id="MutPrice">48.00</span></p>
               <hr>
               <!--add to cart-->
-              <div class="row">              
-                <div class="col-sm-6">
-                  <input class="amountInput" type="number" id="SupertoolInput">
-                </div>
-                <div class="col-sm-6">
-                  <button class="btn btn-primary" onclick="queueItemNew('Supertool')">Add to Cart</button>
+              <div class="row">  
+                <div class="col-sm-12">
+                  <div class="input-group">
+                    <input class="form-control amountInput" type="number" id="MutInput">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" onclick="queueItemNew('Mut')">Add to Cart</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -178,23 +188,25 @@
         <div class="card">
           <div class="row">
             <!--item name & image-->
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <h2 class="toolName">Surge</h2>
               <img class="toolImage" id="SurgeImage" src="./images/surge-fanned.jpg" alt="multitool">
             </div>
             <!--item description and purchase-->
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <h4>Description</h4>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
               <p class="toolPriceBox">$<span id="SurgePrice">35.00</span></p>
               <hr>
               <!--add to cart-->
-              <div class="row">              
-                <div class="col-sm-6">
-                  <input class="amountInput" type="number" id="SurgeInput">
-                </div>
-                <div class="col-sm-6">
-                  <button class="btn btn-primary" onclick="queueItemNew('Surge')">Add to Cart</button>
+              <div class="row"> 
+                <div class="col-sm-12">
+                  <div class="input-group">
+                    <input class="form-control amountInput" type="number" id="SurgeInput">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" onclick="queueItemNew('Surge')">Add to Cart</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -206,23 +218,25 @@
         <div class="card">
           <div class="row">
             <!--item name & image-->
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <h2 class="toolName">Wingman</h2>
               <img class="toolImage" id="WingmanImage" src="./images/wingman-silver-fanned.jpg" alt="multitool">
             </div>
             <!--item description and purchase-->
-            <div class="col-sm-6">
+            <div class="col-lg-6">
               <h4>Description</h4>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque tempora facilis ipsam itaque enim suscipit, aut excepturi iste, mollitia ullam delectus dolore placeat fugit doloribus earum dignissimos, possimus illo?</p>
               <p class="toolPriceBox">$<span id="WingmanPrice">32.00</span></p>
               <hr>
               <!--add to cart-->
-              <div class="row">              
-                <div class="col-sm-6">
-                  <input class="amountInput" type="number" id="WingmanInput">
-                </div>
-                <div class="col-sm-6">
-                  <button class="btn btn-primary" onclick="queueItemNew('Wingman')">Add to Cart</button>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="input-group">
+                    <input class="form-control amountInput" type="number" id="WingmanInput">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" onclick="queueItemNew('Wingman')">Add to Cart</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -239,7 +253,7 @@
     <h1 class="toolName">Shopping Cart</h1>
     <div class="container-fluid rounded cartListContainer">
       <!--cart header-->
-      <div class="row">
+      <div class="row" id="cartHeader">
         <div class="col-sm-6">
           Product
         </div>
@@ -292,15 +306,37 @@
     <h1 class="toolName">Checkout</h1>
     <div class="container-fluid rounded cartListContainer">
       <form class="row">
+          <!--purchase Summary Section-->
+          <h2 class="col-md-12">Purchase Summary</h2>
+          <div class="col-sm-3">
+            <label for="cartAm" class="form-label">Items in Cart</label>
+            <input type="text" class="form-control" id="cartAm" value="0" disabled>
+          </div>
+          <div class="col-sm-3">
+            <label for="gTotal" class="form-label">Total (BZD)</label>
+            <input type="text" class="form-control" id="gTotal" value="$0.00" disabled>
+          </div>
+          <div class="col-sm-6">
+            <label for="pCode" class="form-label">Promo Code</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="pCode" placeholder="XXX-XXX">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </div>
+          <hr class="col-sm-10">
+          <br class="col-sm-12">
+
           <!--Profile Section-->
           <h2 class="col-md-12">Profile</h2>
           <div class="col-sm-6">
-            <label for="validationDefault01" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="validationDefault01" required>
+            <label for="buyersName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="buyersName" required>
           </div>
           <div class="col-sm-6">
-            <label for="validationDefault01" class="form-label">Email Address</label>
-            <input type="text" class="form-control" id="validationDefault01" required>
+            <label for="buyersEAdd" class="form-label">Email Address</label>
+            <input type="text" class="form-control" id="buyersEAdd" required>
           </div>
           <hr class="col-sm-10">
           <br class="col-sm-12">
@@ -308,13 +344,13 @@
           <!--Address Section-->
           <h2 class="col-md-12">Delivery Address</h2>
           <div class="col-sm-7">
-            <label for="validationDefault01" class="form-label">Address 1</label>
-            <input type="text" class="form-control" id="validationDefault01" required>
+            <label for="buyersAddress1" class="form-label">Address 1</label>
+            <input type="text" class="form-control" id="buyersAddress1" required>
           </div>
           <div class="col-sm-5">
-            <label for="validationDefault01" class="form-label">District</label>
+            <label for="buyersDistrict1" class="form-label">District</label>
             <br>
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" id="buyersDistrict1" aria-label="Default select example">
               <option selected>Select District</option>
               <option value="czl">Corozal</option>
               <option value="ow">Orange Walk</option>
@@ -325,13 +361,13 @@
             </select>
           </div>
           <div class="col-sm-7">
-            <label for="validationDefault01" class="form-label">Address 2 (back up)</label>
-            <input type="text" class="form-control" id="validationDefault01">
+            <label for="buyersAddress2" class="form-label">Address 2 (back up)</label>
+            <input type="text" class="form-control" id="buyersAddress2">
           </div>
           <div class="col-sm-5">
-            <label for="validationDefault01" class="form-label">District</label>
+            <label for="buyersDistrict2" class="form-label">District</label>
             <br>
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" id="buyersDistrict2" aria-label="Default select example">
               <option selected>Select District</option>
               <option value="czl">Corozal</option>
               <option value="ow">Orange Walk</option>
@@ -359,15 +395,16 @@
             <label class="custom-control-label" for="paypal">Paypal</label>
           </div>
           <br class="col-md-12">
-          <br class="col-md-12">
+          <hr class="col-sm-10">
+
         <div class="col-md-6 mb-3">
           <label for="cc-name">Name on card</label>
-          <input type="text" class="form-control" id="cc-name" placeholder="" required>
+          <input type="text" class="form-control" id="hldrName" placeholder="" required>
           <small class="text-muted">Full name as displayed on card</small>
         </div>
         <div class="col-md-6 mb-3">
           <label for="cc-number">Credit card number</label>
-          <input type="number" class="form-control" id="cc-number" placeholder="" required>
+          <input type="number" class="form-control" id="hldrNumber" placeholder="" required>
         </div>
         <hr class="col-sm-10">
         <br class="col-sm-12">
