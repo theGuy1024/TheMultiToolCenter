@@ -49,10 +49,14 @@ nav{
     background: rgba(192, 192, 192, 0.5)
 }
 
+nav li form, nav li .cartGroup{
+    margin: 10px 0;
+}
+
 /*nav bar text*/
 nav li h3{
     color: black;
-    margin: 0 15px;
+    margin: 10px 15px;
 }
 
 /*Nav bar search box*/
@@ -140,4 +144,11 @@ nav li h3{
     padding: 20px 10px;
     background: white;
     width: 90vw;
+}
+
+
+@media screen and (max-width: 768px) {
+    #cartHeader{
+        display: none;
+    }
 }
